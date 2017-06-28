@@ -5,8 +5,6 @@ files:
     destination: /home/ubuntu/myapp
 hooks:
   AfterInstall:
-    - location: yarn
-  ApplicationStart:
-    - location: npm run start
+    - location: yarn  
   ApplicationStop:
-    - location: npm run stop_all
+    - location: npm run stop_all && npm run start
