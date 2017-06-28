@@ -1,3 +1,5 @@
 #!/bin/bash
 source ~/.bashrc
-yarn
+cd /home/ubuntu/myapp
+rm -rf node_modules
+npm install
