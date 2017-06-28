@@ -6,7 +6,7 @@ files:
 hooks:
   AfterInstall:
     - location: scripts/after_install.sh
-      runas: ubuntu
+      runas: root
   ApplicationStart:
     - location: scripts/app_start.sh
       runas: ubuntu
