@@ -9,6 +9,8 @@ cache:
 deploy:
 - provider: s3
   local_dir: dpl_cd_upload
+  access_key_id: AKIAJW4VB2PSSWJ74JLQ
+  secret_access_key: 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
   skip_cleanup: true
   on: &2
     repo: vimal1083/travis-deployment
@@ -17,6 +19,8 @@ deploy:
 - provider: codedeploy
   bucket: travis-deploy-code
   key: latest.zip
+  access_key_id: AKIAJW4VB2PSSWJ74JLQ
+  secret_access_key: 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
   bundle_type: zip
   application: travis-trigger-deployment
   deployment_group: travis-trigger-deployment-group
