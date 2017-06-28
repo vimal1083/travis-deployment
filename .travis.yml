@@ -8,8 +8,6 @@ cache:
     - node_modules
 deploy:
 - provider: s3
-  access_key_id: AKIAJW4VB2PSSWJ74JLQ
-  secret_access_key: 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
   local_dir: dpl_cd_upload
   skip_cleanup: true
   on: &2
@@ -17,8 +15,6 @@ deploy:
   bucket: travis-deploy-code
   region: us-east-2
 - provider: codedeploy
-  access_key_id: AKIAJW4VB2PSSWJ74JLQ
-  secret_access_key: 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
   bucket: travis-deploy-code
   key: latest.zip
   bundle_type: zip

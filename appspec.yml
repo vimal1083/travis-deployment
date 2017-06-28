@@ -3,3 +3,10 @@ os: linux
 files:
   - source: ./
     destination: /home/ubuntu/myapp
+hooks:
+  AfterInstall:
+    - location: yarn
+  ApplicationStart:
+    - location: npm run start
+  ApplicationStop:
+    - location: npm run stop_all
