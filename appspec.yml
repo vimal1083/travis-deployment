@@ -5,6 +5,8 @@ files:
     destination: /home/ubuntu/myapp
 hooks:
   AfterInstall:
+    - location: scripts/after_instal_delete_node_modules.sh
+      runas: root
     - location: scripts/after_install.sh
       runas: ubuntu
   ApplicationStart:
