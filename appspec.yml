@@ -5,6 +5,6 @@ files:
     destination: /home/ubuntu/myapp
 hooks:  
   ApplicationStart:
-    - location: scripts/after_start.sh
+    - location: scripts/app_start.sh
   ApplicationStop:
     - location: scripts/app_stop.sh
